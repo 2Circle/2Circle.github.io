@@ -12,8 +12,8 @@
         else if(localStorage.getItem("meek_theme")=="light"){document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="light";}
     </script>
     
-<meta name="description" content="好好玩儿！">
-<title>游人呓语</title>
+<meta name="description" content="就是好好玩儿！">
+<title>玩者之心</title>
 
 </head>
 <style>
@@ -52,7 +52,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <body>
     <div id="header">
 <h1>
-    <img src="https://raw.githubusercontent.com/2Circle/2Circle.github.io/main/202212211401067.jpeg" class="avatar circle" id="avatarImg" alt="avatar"><a class="blogTitle">游人呓语</a></h1>
+    <img src="https://raw.githubusercontent.com/2Circle/2Circle.github.io/main/202212211401067.jpeg" class="avatar circle" id="avatarImg" alt="avatar"><a class="blogTitle">玩者之心</a></h1>
 <div class="title-right">
     <a href="https://2Circle.github.io/tag.html"><button id="buttonSearch" class="btn btn-invisible circle" title="搜索">
         <svg class="octicon" width="16" height="16" >
@@ -62,6 +62,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <a href="https://2Circle.github.io/about.html"><button class="btn btn-invisible circle" title="关于">
         <svg class="octicon" width="16" height="16" >
             <path id="关于" fill-rule="evenodd"></path>
+        </svg>
+    </button></a><a href="https://2Circle.github.io/碎碎念.html"><button class="btn btn-invisible circle" title="hello world">
+        <svg class="octicon" width="16" height="16" >
+            <path id="hello world" fill-rule="evenodd"></path>
         </svg>
     </button></a>
     <a href="https://2Circle.github.io/rss.xml" target="_blank"><button id="buttonRSS" class="btn btn-invisible circle" title="RSS">
@@ -77,23 +81,12 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div style="margin-bottom: 16px;">好好玩儿！</div>
+<div style="margin-bottom: 16px;">就是好好玩儿！</div>
 <nav class="SideNav border">
-<a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/hello%20world.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">hello world</span>
-    </div>
-    <div class="listLabels">
-        <span class="Label" style="background-color:#006b75">1</span>
-        <span class="Label LabelName" style="background-color:#92C8E9"><object><a style="color:#fff" href="https://2Circle.github.io/tag.html#碎碎念">碎碎念</a></object></span>
-        <span class="Label LabelTime" style="background-color:#bc4c00">2024-03-24</span>
-    </div>
-</a>
+
 </nav>
 </div>
-    <div id="footer">Copyright © <span id="year"></span><a href="https://2Circle.github.io"> 游人呓语 </a>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://2Circle.github.io"> 玩者之心 </a>
 <p>
 <span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
 </p>
@@ -156,7 +149,7 @@ for(var i=0;i<iconPost.length;i++){
     iconPost[i].setAttribute("d",IconList["post"]);
 }
 
-document.getElementById("关于").setAttribute("d",value=IconList["about"]);
+document.getElementById("关于").setAttribute("d",value=IconList["about"]);document.getElementById("hello world").setAttribute("d",value=IconList["碎碎念"]);
 </script>
 
 </html>
